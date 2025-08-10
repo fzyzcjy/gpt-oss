@@ -1,3 +1,4 @@
+import dataclasses
 import os
 from collections import defaultdict
 from multiprocessing.pool import ThreadPool
