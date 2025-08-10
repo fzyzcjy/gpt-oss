@@ -75,7 +75,10 @@ def aggregate_results(
         metrics=final_metrics,
         htmls=htmls,
         convos=convos,
-        metadata={"example_level_metadata": metadata},
+        metadata={
+            "example_level_metadata": metadata,
+            "single_eval_results": [dataclasses.asdict(x) for x in single_eval_results],
+        },
     )
 
 
